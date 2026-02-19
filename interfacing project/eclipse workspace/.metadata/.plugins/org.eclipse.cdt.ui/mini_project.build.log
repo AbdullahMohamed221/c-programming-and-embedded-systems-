@@ -1,0 +1,39 @@
+01:11:05 **** Incremental Build of configuration Debug for project mini_project ****
+make all 
+Building file: ../mini_project.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"mini_project.d" -MT"mini_project.o" -c -o "mini_project.o" "../mini_project.c"
+In file included from ../mini_project.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../mini_project.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../mini_project.c
+ 
+Building target: mini_project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,mini_project.map -mmcu=atmega32 -o "mini_project.elf"  ./mini_project.o   
+Finished building target: mini_project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S mini_project.elf  >"mini_project.lss"
+Finished building: mini_project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 mini_project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6686 bytes (20.4% Full)
+(.text + .data + .bootloader)
+
+Data:         17 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+01:11:11 Build Finished. 0 errors, 2 warnings. (took 5s.468ms)
+
