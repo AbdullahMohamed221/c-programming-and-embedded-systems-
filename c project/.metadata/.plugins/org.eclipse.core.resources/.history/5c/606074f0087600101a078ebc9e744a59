@@ -1,0 +1,328 @@
+/*
+ ============================================================================
+ Name        : C.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include<string.h>
+struct student {
+	int id;  //student id
+	char name[50];	//student name
+	int age; 	//student age
+	float gpa;	//student GPA
+};
+struct node {
+	struct student data;	//to save the data of the student
+	struct node *next;	//to make the linked list
+};
+
+struct node *head = NULL;	//the start of the linked list
+
+void addStudent(const struct student *const ptr); /*the function that will add students
+ in the linked list */
+void displayStudents(void); 	//prints the list
+void searchStudentByID(int id);	//searches for a student with the id
+void updateStudent(int id);	//this function update the student with this id
+void deleteStudent(int id);	//this function takes students id and then delete the student from the system
+float calculateAverageGPA(void); //this function will calculate the average of the GPAs
+void searchHighestGPA(void); //prints the greatest gpa
+
+int main(void) {
+	int x = 0;	//for the while loop
+
+	do {
+		struct student n;
+		struct student *ptr = &n; //to point on the structure that we working on
+		int id = 0; //the id that the user enters in case 3,4and 5 (interfacing with the user)
+
+		printf("------------\nchoose a feature:\n");
+		printf(
+				"1.Add a student\n2.Display All Students\n3."
+						"Search for a Student by ID\n4.Update Student Information\n"
+						"5.Delete a Student\n6.Calculate average GPA\n7.Find student with Highest"
+						"GPA\n8.Exit\n");
+		printf("feature number: ");
+		fflush(stdout);
+		scanf("%d", &x); //taking inputs from the user to choose a feature
+
+		switch (x) {
+		case 1: //adding student
+			//taking the data from the user and saving it in a structure of stuent type
+			printf("\nplease enter the student data\n");
+			printf("NAME:");
+			fflush(stdout);
+			scanf("%s", (ptr->name));
+			printf("AGE:");
+			fflush(stdout);
+			scanf("%d", &(ptr->age));
+			printf("ID:");
+			fflush(stdout);
+			scanf("%d", &(ptr->id));
+			printf("GPA:");
+			fflush(stdout);
+			scanf("%f", &(ptr->gpa));
+			/////////////////////////////////////////////////////////////////////////
+			addStudent(ptr);
+			break;
+		case 2: // display
+			displayStudents();
+			break;
+		case 3: // search for the student
+
+			printf("please enter the id of the student\n");	//taking the id from the user
+			printf("ID:");
+			fflush(stdout);
+			scanf("%d", &id);
+			searchStudentByID(id);
+			break;
+		case 4: //updating
+			printf("\nplease enter the id of the student\n");	//taking the id from the user
+			printf("ID:");
+			fflush(stdout);
+			scanf("%d", &id);
+			updateStudent(id);
+			break;
+		case 5: //deleting info
+			printf(
+					"please enter the id of the student that you want to remove it from the system\n");	//taking the id from the user
+			fflush(stdout);
+			scanf("%d", &id);
+			deleteStudent(id);
+			break;
+		case 6: //Calculation the average
+			printf("\n-----------------\n");
+			printf("The average GPA of the students is %f",
+					calculateAverageGPA());
+
+			break;
+		case 7: //highest gpa
+			searchHighestGPA();
+			break;
+		case 8: //exit
+			printf("thank you for using our system");
+			break;
+		default:
+			printf("invalid input");
+
+		}
+
+	} while (x != 8);
+
+	return 0;
+}
+void addStudent(const struct student *const ptr) {
+
+	struct node *currunt = NULL; //pointer to loop on the linked list find the end of the linked list and add the new node
+	struct node *currunt_2 = NULL; //pointer to loop on the linked list to check if the id is used before or not
+	struct node *link = (struct node*) malloc(sizeof(struct node)); //allocating new node to the linked list
+	if (link == NULL) {	//checking if memory allocation failed or not
+		printf("\nmemory allocation failed\n");
+		return;
+	}
+	//memory allocation didn't fail so, it will add the data that was taken from the user to the node to put it in the list
+	link->data.age = ptr->age;
+	link->data.id = ptr->id;
+	link->data.gpa = ptr->gpa;
+	strcpy(link->data.name, ptr->name);
+	if (head == NULL) {	//if the linked list is empty it will put the node at the beginning of the linked list
+		link->next = head;
+		head = link;
+		return;
+	}
+	currunt = head;
+	while (currunt->next != NULL) {	//Linked list isn't empty so, it will loop till the end of the list and then add the node from the end of the list
+		currunt = currunt->next;
+	}
+
+	currunt_2 = head;		//putting the pointer at the beginning of the list
+	while (currunt_2 != NULL) {	//pointer to check the whole list if the used is used before or not and loops till it reaches null (the end of the list)
+		if (ptr->id == currunt_2->data.id) { //if the id that the user enter equal to any id in the list, it will prints an error message and don't add the node to the list
+			printf(
+					"\ERROR:This id is used, this student can't be add to the system\n");
+			return;
+		}
+		currunt_2 = currunt_2->next; //increment of the pointer
+	}
+
+	//adding the node to the end of  linked list
+	currunt->next = link;
+	link->next = NULL;
+}
+
+void displayStudents(void) {
+	struct node *currunt = NULL;
+	if (head == NULL) {	//check if the list is empty or not
+		printf("\nthe list is empty\n");
+		return;
+	}
+	currunt = head;
+	while (currunt != NULL) {	//loops on the list and prints all the details of the student
+		printf("\n--------------\n");
+		printf("NAME:%s\n", currunt->data.name);
+		printf("AGE:%d\n", currunt->data.age);
+		printf("ID:%d\n", currunt->data.id);
+		printf("GPA:%.3f\n", currunt->data.gpa);
+
+		currunt = currunt->next;	//increment the pointer
+
+	}
+}
+
+void searchStudentByID(int id) {
+	struct node *currunt = NULL;
+	if (head == NULL) {//check if the list is empty or not
+		printf("the list is empty");
+		return;
+	}
+	currunt = head;
+	while (currunt != NULL) {	//loop on the list in order to find the student of this id
+
+		if (currunt->data.id == id) {	//the id was found so it prints their info
+			printf("\n--------------\n");
+			printf("NAME:%s\n", currunt->data.name);
+			printf("AGE:%d\n", currunt->data.age);
+			printf("ID:%d\n", currunt->data.id);
+			printf("GPA:%.3f\n", currunt->data.gpa);
+			printf("enter the new data:\n");
+			return;
+		}
+		currunt = currunt->next;	//increment the pointer
+
+	}
+	printf("\nStudent is not found\n");		//if the function has reached this line so, it means that the id was not found
+	return;
+
+}
+
+void updateStudent(int id) {
+	struct node *currunt = NULL;
+	//local variable to take the info from the user
+	char name[50];
+	int age;
+	float gpa;
+
+	if (head == NULL) {	//check if the list is empty or not
+		printf("the list is empty");
+		return;
+	}
+
+	currunt = head;
+	while (currunt != NULL) {	//loops on the list and prints all the details of the student and take the new info from the user
+
+		if (currunt->data.id == id) {
+			//printing the old data
+			printf("\n--------------\n");
+			printf("NAME:%s\n", currunt->data.name);
+			printf("AGE:%d\n", currunt->data.age);
+			printf("ID:%d\n", currunt->data.id);
+			printf("GPA:%.3f\n", currunt->data.gpa);
+			printf("NAME:");
+			//taking data from the user
+			fflush(stdout);
+			scanf("%s", (name));
+			/////
+			printf("AGE:");
+			fflush(stdout);
+			scanf("%d", &(age));
+			////
+			printf("GPA:");
+			fflush(stdout);
+			scanf("%f", &(gpa));
+			printf("\n--------------\n");
+			//updating the data
+			currunt->data.age = age;
+			currunt->data.gpa = gpa;
+			strcpy(currunt->data.name, name);
+			return;
+		}
+		currunt = currunt->next;	//increment the pointer
+
+	}
+
+	printf("\nStudent is not found\n");		//if the function has reached this line so, it means that the id was not found
+	return;
+
+}
+
+float calculateAverageGPA(void) {
+	struct node *currunt = NULL;
+	int counter = 0;	//to count the number of the students in the list
+	float sum = 0;		//Variable to hold the GPA and add them
+	if (head == NULL) {	//check if the list is empty or not
+		printf("the list is empty");
+		return 0.0;		//if the list is empty so it will return 0
+	}
+	currunt = head;
+	while (currunt != NULL) {	//loops over the list and count the number of the list and add the GPA to sum
+		sum += currunt->data.gpa;
+		counter++;
+		currunt = currunt->next;	//Increment of the pointer
+	}
+	return (sum / counter);	//returning the average GPA of the student
+}
+
+void searchHighestGPA(void) {
+	struct node *currunt = NULL;
+	float max = 0;	//to compare each node and check if this GPA is greater or not
+	int id = 0, age = 0;	//to save the info of the greatest GPA
+	char name[50];		//to save the info of the greatest GPA
+	if (head == NULL) {		//checks if the list is empty or not
+		printf("the list is empty");
+		return;
+	}
+	currunt = head;		//starting from the beginning of the list
+	while (currunt != NULL) {	//loops till the end of the list
+		if (max < currunt->data.gpa) {	//checks the number is grater ot not
+			//saving the data of the student of the highest gpa
+			max = currunt->data.gpa;
+			id = currunt->data.id;
+			age = currunt->data.age;
+			strcpy(name, currunt->data.name);
+
+		}
+		currunt = currunt->next;	//pointer increment
+
+	}
+	//printing the data of the student with the highest GPA
+	printf("\n--------------\n");
+	printf("\nStudent with the max GPA is:\n");
+	printf("NAME:%s\n", name);
+	printf("AGE:%d\n", age);
+	printf("ID:%d\n", id);
+	printf("GPA:%.3f\n", max);
+	printf("\n--------------\n");
+}
+void deleteStudent(int id) {
+	struct node *currunt = NULL;	//pointer to loop on the whole list
+	struct node *delete = NULL;		//pointer that is used to delete the node
+	if (head == NULL) {		//checks if the list is empty
+		printf("the list is empty");	//message that tells that the list is empty
+		return;
+	}
+	currunt = head;	//starting from the beginning of the array
+	if (head->data.id == id) {	//checks if the id in the first node
+		delete = head;	//putting the head in delete
+		head=head->next;	//making head points on the next node
+		free(delete);	//deleting the node
+		printf("\nthe student information is deleted from the system\n");	//Success message
+		return;
+	}
+	while (currunt != NULL) {	//looping over the whole list
+		if (currunt->next->data.id == id) {	//checks of the next nod is the node that we want to delete
+			delete = currunt->next;	//putting the adders of the next node that we want to delete in delete pointer
+			currunt->next=currunt->next->next;	//making the node the previous node pointer to the one after next
+			free(delete);	//deleting the node
+			printf("\nthe student information is deleted from the system\n");	//Success message
+			return;
+		}
+		currunt = currunt->next;	//pointer increment
+
+	}
+	printf("\nStudent wasn't found\n");	// if the function has reached this line so, the id was not found
+}

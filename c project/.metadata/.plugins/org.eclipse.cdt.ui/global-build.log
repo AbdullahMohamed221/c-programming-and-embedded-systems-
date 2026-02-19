@@ -1,0 +1,1213 @@
+21:14:53 **** Rebuild of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+..\src\C project_Abdullah Mohamed.c: In function 'main':
+..\src\C project_Abdullah Mohamed.c:15:6: warning: unused variable 'x' [-Wunused-variable]
+  int x=0;//for the while loop
+      ^
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+Info: Nothing to build for C project_Abdullah Mohamed
+21:15:13 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+..\src\C project_Abdullah Mohamed.c: In function 'main':
+..\src\C project_Abdullah Mohamed.c:15:6: warning: unused variable 'x' [-Wunused-variable]
+  int x=0;//for the while loop
+      ^
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+21:17:29 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+21:18:29 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+21:57:31 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+..\src\C project_Abdullah Mohamed.c: In function 'main':
+..\src\C project_Abdullah Mohamed.c:42:3: error: a label can only be part of a statement and a declaration is not a statement
+   struct student n;
+   ^~~~~~
+..\src\C project_Abdullah Mohamed.c:51:11: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+   scanf("%d",ptr->age);
+          ~^  ~~~~~~~~
+..\src\C project_Abdullah Mohamed.c:51:11: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+..\src\C project_Abdullah Mohamed.c:55:11: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+   scanf("%d",ptr->id);
+          ~^  ~~~~~~~
+..\src\C project_Abdullah Mohamed.c:55:11: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+..\src\C project_Abdullah Mohamed.c:58:11: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'double' [-Wformat=]
+   scanf("%d",ptr->gpa);
+          ~^  ~~~~~~~~
+..\src\C project_Abdullah Mohamed.c:58:11: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'double' [-Wformat=]
+..\src\C project_Abdullah Mohamed.c: In function 'addStudent':
+..\src\C project_Abdullah Mohamed.c:98:13: error: invalid type argument of '->' (have 'struct student')
+   link->data->age=ptr->age; //allocating the age in the heap
+             ^~
+..\src\C project_Abdullah Mohamed.c:99:13: error: invalid type argument of '->' (have 'struct student')
+   link->data->gpa=ptr->gpa; //allocating the gpa in the heap
+             ^~
+..\src\C project_Abdullah Mohamed.c:100:13: error: invalid type argument of '->' (have 'struct student')
+   link->data->id=ptr->id;  //allocating the id in the heap
+             ^~
+..\src\C project_Abdullah Mohamed.c:101:13: error: invalid type argument of '->' (have 'struct student')
+   link->data->name=ptr->name; //allocating the name in the heap
+             ^~
+..\src\C project_Abdullah Mohamed.c:104:14: warning: assignment to 'struct student *' from incompatible pointer type 'struct node *' [-Wincompatible-pointer-types]
+    link->next=head;
+              ^
+..\src\C project_Abdullah Mohamed.c:110:17: error: invalid type argument of '->' (have 'struct student')
+    if(link->data->id==currunt->data->id)
+                 ^~
+..\src\C project_Abdullah Mohamed.c:110:36: error: invalid type argument of '->' (have 'struct student')
+    if(link->data->id==currunt->data->id)
+                                    ^~
+..\src\C project_Abdullah Mohamed.c:115:11: warning: assignment to 'struct node *' from incompatible pointer type 'struct student *' [-Wincompatible-pointer-types]
+    currunt=currunt->next;
+           ^
+..\src\C project_Abdullah Mohamed.c:117:16: warning: assignment to 'struct student *' from incompatible pointer type 'struct node *' [-Wincompatible-pointer-types]
+   currunt->next=link;  //putting the node at the end of the list
+                ^
+21:58:33 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+..\src\C project_Abdullah Mohamed.c: In function 'main':
+..\src\C project_Abdullah Mohamed.c:42:3: error: a label can only be part of a statement and a declaration is not a statement
+   struct student n;
+   ^~~~~~
+..\src\C project_Abdullah Mohamed.c:47:11: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char (*)[50]' [-Wformat=]
+   scanf("%s",&(ptr->name));
+          ~^  ~~~~~~~~~~~~
+..\src\C project_Abdullah Mohamed.c:47:11: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char (*)[50]' [-Wformat=]
+..\src\C project_Abdullah Mohamed.c:58:11: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'float *' [-Wformat=]
+   scanf("%d",&(ptr->gpa));
+          ~^  ~~~~~~~~~~~
+          %e
+..\src\C project_Abdullah Mohamed.c:58:11: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'float *' [-Wformat=]
+   scanf("%d",&(ptr->gpa));
+          ~^  ~~~~~~~~~~~
+          %e
+..\src\C project_Abdullah Mohamed.c: In function 'addStudent':
+..\src\C project_Abdullah Mohamed.c:98:13: error: invalid type argument of '->' (have 'struct student')
+   link->data->age=ptr->age; //allocating the age in the heap
+             ^~
+..\src\C project_Abdullah Mohamed.c:99:13: error: invalid type argument of '->' (have 'struct student')
+   link->data->gpa=ptr->gpa; //allocating the gpa in the heap
+             ^~
+..\src\C project_Abdullah Mohamed.c:100:13: error: invalid type argument of '->' (have 'struct student')
+   link->data->id=ptr->id;  //allocating the id in the heap
+             ^~
+..\src\C project_Abdullah Mohamed.c:101:13: error: invalid type argument of '->' (have 'struct student')
+   link->data->name=ptr->name; //allocating the name in the heap
+             ^~
+..\src\C project_Abdullah Mohamed.c:104:14: warning: assignment to 'struct student *' from incompatible pointer type 'struct node *' [-Wincompatible-pointer-types]
+    link->next=head;
+              ^
+..\src\C project_Abdullah Mohamed.c:110:17: error: invalid type argument of '->' (have 'struct student')
+    if(link->data->id==currunt->data->id)
+                 ^~
+..\src\C project_Abdullah Mohamed.c:110:36: error: invalid type argument of '->' (have 'struct student')
+    if(link->data->id==currunt->data->id)
+                                    ^~
+..\src\C project_Abdullah Mohamed.c:115:11: warning: assignment to 'struct node *' from incompatible pointer type 'struct student *' [-Wincompatible-pointer-types]
+    currunt=currunt->next;
+           ^
+..\src\C project_Abdullah Mohamed.c:117:16: warning: assignment to 'struct student *' from incompatible pointer type 'struct node *' [-Wincompatible-pointer-types]
+   currunt->next=link;  //putting the node at the end of the list
+                ^
+22:03:39 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+..\src\C project_Abdullah Mohamed.c: In function 'main':
+..\src\C project_Abdullah Mohamed.c:42:3: error: a label can only be part of a statement and a declaration is not a statement
+   const struct student n;
+   ^~~~~
+..\src\C project_Abdullah Mohamed.c:43:6: error: assignment of read-only variable 'ptr'
+   ptr=&n;
+      ^
+..\src\C project_Abdullah Mohamed.c:47:11: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char (*)[50]' [-Wformat=]
+   scanf("%s",&(ptr->name));
+          ~^  ~~~~~~~~~~~~
+..\src\C project_Abdullah Mohamed.c:47:11: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char (*)[50]' [-Wformat=]
+..\src\C project_Abdullah Mohamed.c:58:11: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'float *' [-Wformat=]
+   scanf("%d",&(ptr->gpa));
+          ~^  ~~~~~~~~~~~
+          %e
+..\src\C project_Abdullah Mohamed.c:58:11: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'float *' [-Wformat=]
+   scanf("%d",&(ptr->gpa));
+          ~^  ~~~~~~~~~~~
+          %e
+..\src\C project_Abdullah Mohamed.c: In function 'addStudent':
+..\src\C project_Abdullah Mohamed.c:98:13: error: invalid type argument of '->' (have 'struct student')
+   link->data->age=ptr->age; //allocating the age in the heap
+             ^~
+..\src\C project_Abdullah Mohamed.c:99:13: error: invalid type argument of '->' (have 'struct student')
+   link->data->gpa=ptr->gpa; //allocating the gpa in the heap
+             ^~
+..\src\C project_Abdullah Mohamed.c:100:13: error: invalid type argument of '->' (have 'struct student')
+   link->data->id=ptr->id;  //allocating the id in the heap
+             ^~
+..\src\C project_Abdullah Mohamed.c:101:13: error: invalid type argument of '->' (have 'struct student')
+   link->data->name=ptr->name; //allocating the name in the heap
+             ^~
+..\src\C project_Abdullah Mohamed.c:104:14: warning: assignment to 'struct student *' from incompatible pointer type 'struct node *' [-Wincompatible-pointer-types]
+    link->next=head;
+              ^
+..\src\C project_Abdullah Mohamed.c:110:17: error: invalid type argument of '->' (have 'struct student')
+    if(link->data->id==currunt->data->id)
+                 ^~
+..\src\C project_Abdullah Mohamed.c:110:36: error: invalid type argument of '->' (have 'struct student')
+    if(link->data->id==currunt->data->id)
+                                    ^~
+..\src\C project_Abdullah Mohamed.c:115:11: warning: assignment to 'struct node *' from incompatible pointer type 'struct student *' [-Wincompatible-pointer-types]
+    currunt=currunt->next;
+           ^
+..\src\C project_Abdullah Mohamed.c:117:16: warning: assignment to 'struct student *' from incompatible pointer type 'struct node *' [-Wincompatible-pointer-types]
+   currunt->next=link;  //putting the node at the end of the list
+                ^
+22:04:18 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+..\src\C project_Abdullah Mohamed.c: In function 'main':
+..\src\C project_Abdullah Mohamed.c:45:6: error: assignment of read-only variable 'ptr'
+   ptr=&n;
+      ^
+..\src\C project_Abdullah Mohamed.c:49:11: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char (*)[50]' [-Wformat=]
+   scanf("%s",&(ptr->name));
+          ~^  ~~~~~~~~~~~~
+..\src\C project_Abdullah Mohamed.c:49:11: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char (*)[50]' [-Wformat=]
+..\src\C project_Abdullah Mohamed.c:60:11: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'float *' [-Wformat=]
+   scanf("%d",&(ptr->gpa));
+          ~^  ~~~~~~~~~~~
+          %e
+..\src\C project_Abdullah Mohamed.c:60:11: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'float *' [-Wformat=]
+   scanf("%d",&(ptr->gpa));
+          ~^  ~~~~~~~~~~~
+          %e
+..\src\C project_Abdullah Mohamed.c: In function 'addStudent':
+..\src\C project_Abdullah Mohamed.c:100:13: error: invalid type argument of '->' (have 'struct student')
+   link->data->age=ptr->age; //allocating the age in the heap
+             ^~
+..\src\C project_Abdullah Mohamed.c:101:13: error: invalid type argument of '->' (have 'struct student')
+   link->data->gpa=ptr->gpa; //allocating the gpa in the heap
+             ^~
+..\src\C project_Abdullah Mohamed.c:102:13: error: invalid type argument of '->' (have 'struct student')
+   link->data->id=ptr->id;  //allocating the id in the heap
+             ^~
+..\src\C project_Abdullah Mohamed.c:103:13: error: invalid type argument of '->' (have 'struct student')
+   link->data->name=ptr->name; //allocating the name in the heap
+             ^~
+..\src\C project_Abdullah Mohamed.c:106:14: warning: assignment to 'struct student *' from incompatible pointer type 'struct node *' [-Wincompatible-pointer-types]
+    link->next=head;
+              ^
+..\src\C project_Abdullah Mohamed.c:112:17: error: invalid type argument of '->' (have 'struct student')
+    if(link->data->id==currunt->data->id)
+                 ^~
+..\src\C project_Abdullah Mohamed.c:112:36: error: invalid type argument of '->' (have 'struct student')
+    if(link->data->id==currunt->data->id)
+                                    ^~
+..\src\C project_Abdullah Mohamed.c:117:11: warning: assignment to 'struct node *' from incompatible pointer type 'struct student *' [-Wincompatible-pointer-types]
+    currunt=currunt->next;
+           ^
+..\src\C project_Abdullah Mohamed.c:119:16: warning: assignment to 'struct student *' from incompatible pointer type 'struct node *' [-Wincompatible-pointer-types]
+   currunt->next=link;  //putting the node at the end of the list
+                ^
+22:04:57 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+..\src\C project_Abdullah Mohamed.c: In function 'main':
+..\src\C project_Abdullah Mohamed.c:31:29: error: expected expression before 'const'
+   struct student *const ptr=const struct student n; //to point on the struct that we working on
+                             ^~~~~
+..\src\C project_Abdullah Mohamed.c:49:11: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char (*)[50]' [-Wformat=]
+   scanf("%s",&(ptr->name));
+          ~^  ~~~~~~~~~~~~
+..\src\C project_Abdullah Mohamed.c:49:11: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char (*)[50]' [-Wformat=]
+..\src\C project_Abdullah Mohamed.c:60:11: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'float *' [-Wformat=]
+   scanf("%d",&(ptr->gpa));
+          ~^  ~~~~~~~~~~~
+          %e
+..\src\C project_Abdullah Mohamed.c:60:11: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'float *' [-Wformat=]
+   scanf("%d",&(ptr->gpa));
+          ~^  ~~~~~~~~~~~
+          %e
+..\src\C project_Abdullah Mohamed.c: In function 'addStudent':
+..\src\C project_Abdullah Mohamed.c:100:13: error: invalid type argument of '->' (have 'struct student')
+   link->data->age=ptr->age; //allocating the age in the heap
+             ^~
+..\src\C project_Abdullah Mohamed.c:101:13: error: invalid type argument of '->' (have 'struct student')
+   link->data->gpa=ptr->gpa; //allocating the gpa in the heap
+             ^~
+..\src\C project_Abdullah Mohamed.c:102:13: error: invalid type argument of '->' (have 'struct student')
+   link->data->id=ptr->id;  //allocating the id in the heap
+             ^~
+..\src\C project_Abdullah Mohamed.c:103:13: error: invalid type argument of '->' (have 'struct student')
+   link->data->name=ptr->name; //allocating the name in the heap
+             ^~
+..\src\C project_Abdullah Mohamed.c:106:14: warning: assignment to 'struct student *' from incompatible pointer type 'struct node *' [-Wincompatible-pointer-types]
+    link->next=head;
+              ^
+..\src\C project_Abdullah Mohamed.c:112:17: error: invalid type argument of '->' (have 'struct student')
+    if(link->data->id==currunt->data->id)
+                 ^~
+..\src\C project_Abdullah Mohamed.c:112:36: error: invalid type argument of '->' (have 'struct student')
+    if(link->data->id==currunt->data->id)
+                                    ^~
+..\src\C project_Abdullah Mohamed.c:117:11: warning: assignment to 'struct node *' from incompatible pointer type 'struct student *' [-Wincompatible-pointer-types]
+    currunt=currunt->next;
+           ^
+..\src\C project_Abdullah Mohamed.c:119:16: warning: assignment to 'struct student *' from incompatible pointer type 'struct node *' [-Wincompatible-pointer-types]
+   currunt->next=link;  //putting the node at the end of the list
+                ^
+22:05:03 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+..\src\C project_Abdullah Mohamed.c: In function 'main':
+..\src\C project_Abdullah Mohamed.c:31:29: error: expected expression before 'const'
+   struct student *const ptr=const struct student n; //to point on the struct that we working on
+                             ^~~~~
+..\src\C project_Abdullah Mohamed.c:49:11: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char (*)[50]' [-Wformat=]
+   scanf("%s",&(ptr->name));
+          ~^  ~~~~~~~~~~~~
+..\src\C project_Abdullah Mohamed.c:49:11: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char (*)[50]' [-Wformat=]
+..\src\C project_Abdullah Mohamed.c:60:11: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'float *' [-Wformat=]
+   scanf("%d",&(ptr->gpa));
+          ~^  ~~~~~~~~~~~
+          %e
+..\src\C project_Abdullah Mohamed.c:60:11: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'float *' [-Wformat=]
+   scanf("%d",&(ptr->gpa));
+          ~^  ~~~~~~~~~~~
+          %e
+..\src\C project_Abdullah Mohamed.c: In function 'addStudent':
+..\src\C project_Abdullah Mohamed.c:100:13: error: invalid type argument of '->' (have 'struct student')
+   link->data->age=ptr->age; //allocating the age in the heap
+             ^~
+..\src\C project_Abdullah Mohamed.c:101:13: error: invalid type argument of '->' (have 'struct student')
+   link->data->gpa=ptr->gpa; //allocating the gpa in the heap
+             ^~
+..\src\C project_Abdullah Mohamed.c:102:13: error: invalid type argument of '->' (have 'struct student')
+   link->data->id=ptr->id;  //allocating the id in the heap
+             ^~
+..\src\C project_Abdullah Mohamed.c:103:13: error: invalid type argument of '->' (have 'struct student')
+   link->data->name=ptr->name; //allocating the name in the heap
+             ^~
+..\src\C project_Abdullah Mohamed.c:106:14: warning: assignment to 'struct student *' from incompatible pointer type 'struct node *' [-Wincompatible-pointer-types]
+    link->next=head;
+              ^
+..\src\C project_Abdullah Mohamed.c:112:17: error: invalid type argument of '->' (have 'struct student')
+    if(link->data->id==currunt->data->id)
+                 ^~
+..\src\C project_Abdullah Mohamed.c:112:36: error: invalid type argument of '->' (have 'struct student')
+    if(link->data->id==currunt->data->id)
+                                    ^~
+..\src\C project_Abdullah Mohamed.c:117:11: warning: assignment to 'struct node *' from incompatible pointer type 'struct student *' [-Wincompatible-pointer-types]
+    currunt=currunt->next;
+           ^
+..\src\C project_Abdullah Mohamed.c:119:16: warning: assignment to 'struct student *' from incompatible pointer type 'struct node *' [-Wincompatible-pointer-types]
+   currunt->next=link;  //putting the node at the end of the list
+                ^
+22:05:47 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+..\src\C project_Abdullah Mohamed.c: In function 'main':
+..\src\C project_Abdullah Mohamed.c:32:29: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   struct student *const ptr=&n; //to point on the struct that we working on
+                             ^
+..\src\C project_Abdullah Mohamed.c:50:11: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char (*)[50]' [-Wformat=]
+   scanf("%s",&(ptr->name));
+          ~^  ~~~~~~~~~~~~
+..\src\C project_Abdullah Mohamed.c:50:11: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char (*)[50]' [-Wformat=]
+..\src\C project_Abdullah Mohamed.c:61:11: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'float *' [-Wformat=]
+   scanf("%d",&(ptr->gpa));
+          ~^  ~~~~~~~~~~~
+          %e
+..\src\C project_Abdullah Mohamed.c:61:11: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'float *' [-Wformat=]
+   scanf("%d",&(ptr->gpa));
+          ~^  ~~~~~~~~~~~
+          %e
+..\src\C project_Abdullah Mohamed.c: In function 'addStudent':
+..\src\C project_Abdullah Mohamed.c:101:13: error: invalid type argument of '->' (have 'struct student')
+   link->data->age=ptr->age; //allocating the age in the heap
+             ^~
+..\src\C project_Abdullah Mohamed.c:102:13: error: invalid type argument of '->' (have 'struct student')
+   link->data->gpa=ptr->gpa; //allocating the gpa in the heap
+             ^~
+..\src\C project_Abdullah Mohamed.c:103:13: error: invalid type argument of '->' (have 'struct student')
+   link->data->id=ptr->id;  //allocating the id in the heap
+             ^~
+..\src\C project_Abdullah Mohamed.c:104:13: error: invalid type argument of '->' (have 'struct student')
+   link->data->name=ptr->name; //allocating the name in the heap
+             ^~
+..\src\C project_Abdullah Mohamed.c:107:14: warning: assignment to 'struct student *' from incompatible pointer type 'struct node *' [-Wincompatible-pointer-types]
+    link->next=head;
+              ^
+..\src\C project_Abdullah Mohamed.c:113:17: error: invalid type argument of '->' (have 'struct student')
+    if(link->data->id==currunt->data->id)
+                 ^~
+..\src\C project_Abdullah Mohamed.c:113:36: error: invalid type argument of '->' (have 'struct student')
+    if(link->data->id==currunt->data->id)
+                                    ^~
+..\src\C project_Abdullah Mohamed.c:118:11: warning: assignment to 'struct node *' from incompatible pointer type 'struct student *' [-Wincompatible-pointer-types]
+    currunt=currunt->next;
+           ^
+..\src\C project_Abdullah Mohamed.c:120:16: warning: assignment to 'struct student *' from incompatible pointer type 'struct node *' [-Wincompatible-pointer-types]
+   currunt->next=link;  //putting the node at the end of the list
+                ^
+22:06:42 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+..\src\C project_Abdullah Mohamed.c: In function 'main':
+..\src\C project_Abdullah Mohamed.c:32:29: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   struct student *const ptr=&n; //to point on the struct that we working on
+                             ^
+..\src\C project_Abdullah Mohamed.c:50:11: warning: format '%c' expects argument of type 'char *', but argument 2 has type 'char (*)[50]' [-Wformat=]
+   scanf("%c",&(ptr->name));
+          ~^  ~~~~~~~~~~~~
+..\src\C project_Abdullah Mohamed.c:50:11: warning: format '%c' expects argument of type 'char *', but argument 2 has type 'char (*)[50]' [-Wformat=]
+..\src\C project_Abdullah Mohamed.c: In function 'addStudent':
+..\src\C project_Abdullah Mohamed.c:101:13: error: invalid type argument of '->' (have 'struct student')
+   link->data->age=ptr->age; //allocating the age in the heap
+             ^~
+..\src\C project_Abdullah Mohamed.c:102:13: error: invalid type argument of '->' (have 'struct student')
+   link->data->gpa=ptr->gpa; //allocating the gpa in the heap
+             ^~
+..\src\C project_Abdullah Mohamed.c:103:13: error: invalid type argument of '->' (have 'struct student')
+   link->data->id=ptr->id;  //allocating the id in the heap
+             ^~
+..\src\C project_Abdullah Mohamed.c:104:13: error: invalid type argument of '->' (have 'struct student')
+   link->data->name=ptr->name; //allocating the name in the heap
+             ^~
+..\src\C project_Abdullah Mohamed.c:107:14: warning: assignment to 'struct student *' from incompatible pointer type 'struct node *' [-Wincompatible-pointer-types]
+    link->next=head;
+              ^
+..\src\C project_Abdullah Mohamed.c:113:17: error: invalid type argument of '->' (have 'struct student')
+    if(link->data->id==currunt->data->id)
+                 ^~
+..\src\C project_Abdullah Mohamed.c:113:36: error: invalid type argument of '->' (have 'struct student')
+    if(link->data->id==currunt->data->id)
+                                    ^~
+..\src\C project_Abdullah Mohamed.c:118:11: warning: assignment to 'struct node *' from incompatible pointer type 'struct student *' [-Wincompatible-pointer-types]
+    currunt=currunt->next;
+           ^
+..\src\C project_Abdullah Mohamed.c:120:16: warning: assignment to 'struct student *' from incompatible pointer type 'struct node *' [-Wincompatible-pointer-types]
+   currunt->next=link;  //putting the node at the end of the list
+                ^
+22:07:03 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+..\src\C project_Abdullah Mohamed.c: In function 'main':
+..\src\C project_Abdullah Mohamed.c:32:29: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   struct student *const ptr=&n; //to point on the struct that we working on
+                             ^
+..\src\C project_Abdullah Mohamed.c: In function 'addStudent':
+..\src\C project_Abdullah Mohamed.c:101:13: error: invalid type argument of '->' (have 'struct student')
+   link->data->age=ptr->age; //allocating the age in the heap
+             ^~
+..\src\C project_Abdullah Mohamed.c:102:13: error: invalid type argument of '->' (have 'struct student')
+   link->data->gpa=ptr->gpa; //allocating the gpa in the heap
+             ^~
+..\src\C project_Abdullah Mohamed.c:103:13: error: invalid type argument of '->' (have 'struct student')
+   link->data->id=ptr->id;  //allocating the id in the heap
+             ^~
+..\src\C project_Abdullah Mohamed.c:104:13: error: invalid type argument of '->' (have 'struct student')
+   link->data->name=ptr->name; //allocating the name in the heap
+             ^~
+..\src\C project_Abdullah Mohamed.c:107:14: warning: assignment to 'struct student *' from incompatible pointer type 'struct node *' [-Wincompatible-pointer-types]
+    link->next=head;
+              ^
+..\src\C project_Abdullah Mohamed.c:113:17: error: invalid type argument of '->' (have 'struct student')
+    if(link->data->id==currunt->data->id)
+                 ^~
+..\src\C project_Abdullah Mohamed.c:113:36: error: invalid type argument of '->' (have 'struct student')
+    if(link->data->id==currunt->data->id)
+                                    ^~
+..\src\C project_Abdullah Mohamed.c:118:11: warning: assignment to 'struct node *' from incompatible pointer type 'struct student *' [-Wincompatible-pointer-types]
+    currunt=currunt->next;
+           ^
+..\src\C project_Abdullah Mohamed.c:120:16: warning: assignment to 'struct student *' from incompatible pointer type 'struct node *' [-Wincompatible-pointer-types]
+   currunt->next=link;  //putting the node at the end of the list
+                ^
+22:08:00 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+..\src\C project_Abdullah Mohamed.c: In function 'main':
+..\src\C project_Abdullah Mohamed.c:32:29: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   struct student *const ptr=&n; //to point on the struct that we working on
+                             ^
+..\src\C project_Abdullah Mohamed.c: In function 'addStudent':
+..\src\C project_Abdullah Mohamed.c:104:18: error: assignment to expression with array type
+   link->data.name=ptr->name; //allocating the name in the heap
+                  ^
+..\src\C project_Abdullah Mohamed.c:107:14: warning: assignment to 'struct student *' from incompatible pointer type 'struct node *' [-Wincompatible-pointer-types]
+    link->next=head;
+              ^
+..\src\C project_Abdullah Mohamed.c:113:17: error: invalid type argument of '->' (have 'struct student')
+    if(link->data->id==currunt->data->id)
+                 ^~
+..\src\C project_Abdullah Mohamed.c:113:36: error: invalid type argument of '->' (have 'struct student')
+    if(link->data->id==currunt->data->id)
+                                    ^~
+..\src\C project_Abdullah Mohamed.c:118:11: warning: assignment to 'struct node *' from incompatible pointer type 'struct student *' [-Wincompatible-pointer-types]
+    currunt=currunt->next;
+           ^
+..\src\C project_Abdullah Mohamed.c:120:16: warning: assignment to 'struct student *' from incompatible pointer type 'struct node *' [-Wincompatible-pointer-types]
+   currunt->next=link;  //putting the node at the end of the list
+                ^
+22:08:52 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+..\src\C project_Abdullah Mohamed.c: In function 'main':
+..\src\C project_Abdullah Mohamed.c:33:29: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   struct student *const ptr=&n; //to point on the struct that we working on
+                             ^
+..\src\C project_Abdullah Mohamed.c: In function 'addStudent':
+..\src\C project_Abdullah Mohamed.c:105:25: error: assignment to expression with array type
+   strcpy(link->data.name=ptr->name); //allocating the name in the heap
+                         ^
+..\src\C project_Abdullah Mohamed.c:105:3: error: too few arguments to function 'strcpy'
+   strcpy(link->data.name=ptr->name); //allocating the name in the heap
+   ^~~~~~
+In file included from ..\src\C project_Abdullah Mohamed.c:13:
+C:/mingw64/x86_64-w64-mingw32/include/string.h:61:18: note: declared here
+   char * __cdecl strcpy(char * __restrict__ _Dest,const char * __restrict__ _Source);
+                  ^~~~~~
+..\src\C project_Abdullah Mohamed.c:108:14: warning: assignment to 'struct student *' from incompatible pointer type 'struct node *' [-Wincompatible-pointer-types]
+    link->next=head;
+              ^
+..\src\C project_Abdullah Mohamed.c:114:17: error: invalid type argument of '->' (have 'struct student')
+    if(link->data->id==currunt->data->id)
+                 ^~
+..\src\C project_Abdullah Mohamed.c:114:36: error: invalid type argument of '->' (have 'struct student')
+    if(link->data->id==currunt->data->id)
+                                    ^~
+..\src\C project_Abdullah Mohamed.c:119:11: warning: assignment to 'struct node *' from incompatible pointer type 'struct student *' [-Wincompatible-pointer-types]
+    currunt=currunt->next;
+           ^
+..\src\C project_Abdullah Mohamed.c:121:16: warning: assignment to 'struct student *' from incompatible pointer type 'struct node *' [-Wincompatible-pointer-types]
+   currunt->next=link;  //putting the node at the end of the list
+                ^
+22:09:08 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+..\src\C project_Abdullah Mohamed.c: In function 'main':
+..\src\C project_Abdullah Mohamed.c:33:29: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   struct student *const ptr=&n; //to point on the struct that we working on
+                             ^
+..\src\C project_Abdullah Mohamed.c: In function 'addStudent':
+..\src\C project_Abdullah Mohamed.c:108:14: warning: assignment to 'struct student *' from incompatible pointer type 'struct node *' [-Wincompatible-pointer-types]
+    link->next=head;
+              ^
+..\src\C project_Abdullah Mohamed.c:114:17: error: invalid type argument of '->' (have 'struct student')
+    if(link->data->id==currunt->data->id)
+                 ^~
+..\src\C project_Abdullah Mohamed.c:114:36: error: invalid type argument of '->' (have 'struct student')
+    if(link->data->id==currunt->data->id)
+                                    ^~
+..\src\C project_Abdullah Mohamed.c:119:11: warning: assignment to 'struct node *' from incompatible pointer type 'struct student *' [-Wincompatible-pointer-types]
+    currunt=currunt->next;
+           ^
+..\src\C project_Abdullah Mohamed.c:121:16: warning: assignment to 'struct student *' from incompatible pointer type 'struct node *' [-Wincompatible-pointer-types]
+   currunt->next=link;  //putting the node at the end of the list
+                ^
+22:09:32 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+..\src\C project_Abdullah Mohamed.c: In function 'main':
+..\src\C project_Abdullah Mohamed.c:33:29: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   struct student *const ptr=&n; //to point on the struct that we working on
+                             ^
+..\src\C project_Abdullah Mohamed.c: In function 'addStudent':
+..\src\C project_Abdullah Mohamed.c:108:14: warning: assignment to 'struct student *' from incompatible pointer type 'struct node *' [-Wincompatible-pointer-types]
+    link->next=head;
+              ^
+..\src\C project_Abdullah Mohamed.c:119:11: warning: assignment to 'struct node *' from incompatible pointer type 'struct student *' [-Wincompatible-pointer-types]
+    currunt=currunt->next;
+           ^
+..\src\C project_Abdullah Mohamed.c:121:16: warning: assignment to 'struct student *' from incompatible pointer type 'struct node *' [-Wincompatible-pointer-types]
+   currunt->next=link;  //putting the node at the end of the list
+                ^
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+22:11:01 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+..\src\C project_Abdullah Mohamed.c: In function 'main':
+..\src\C project_Abdullah Mohamed.c:33:29: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   struct student *const ptr=&n; //to point on the struct that we working on
+                             ^
+..\src\C project_Abdullah Mohamed.c: In function 'addStudent':
+..\src\C project_Abdullah Mohamed.c:108:17: error: expected expression before 'struct'
+    link->next=(*struct student)head;
+                 ^~~~~~
+..\src\C project_Abdullah Mohamed.c:108:32: error: expected ';' before 'head'
+    link->next=(*struct student)head;
+                                ^~~~
+                                ;
+..\src\C project_Abdullah Mohamed.c:119:11: warning: assignment to 'struct node *' from incompatible pointer type 'struct student *' [-Wincompatible-pointer-types]
+    currunt=currunt->next;
+           ^
+..\src\C project_Abdullah Mohamed.c:121:16: warning: assignment to 'struct student *' from incompatible pointer type 'struct node *' [-Wincompatible-pointer-types]
+   currunt->next=link;  //putting the node at the end of the list
+                ^
+22:11:57 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+..\src\C project_Abdullah Mohamed.c: In function 'main':
+..\src\C project_Abdullah Mohamed.c:33:29: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   struct student *const ptr=&n; //to point on the struct that we working on
+                             ^
+..\src\C project_Abdullah Mohamed.c: In function 'addStudent':
+..\src\C project_Abdullah Mohamed.c:108:14: warning: assignment to 'struct student *' from incompatible pointer type 'struct node *' [-Wincompatible-pointer-types]
+    link->next=head;
+              ^
+..\src\C project_Abdullah Mohamed.c:119:11: warning: assignment to 'struct node *' from incompatible pointer type 'struct student *' [-Wincompatible-pointer-types]
+    currunt=currunt->next;
+           ^
+..\src\C project_Abdullah Mohamed.c:121:16: warning: assignment to 'struct student *' from incompatible pointer type 'struct node *' [-Wincompatible-pointer-types]
+   currunt->next=link;  //putting the node at the end of the list
+                ^
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+22:12:29 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+..\src\C project_Abdullah Mohamed.c: In function 'main':
+..\src\C project_Abdullah Mohamed.c:33:29: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   struct student *const ptr=&n; //to point on the struct that we working on
+                             ^
+..\src\C project_Abdullah Mohamed.c: In function 'addStudent':
+..\src\C project_Abdullah Mohamed.c:119:11: warning: assignment to 'struct node *' from incompatible pointer type 'struct student *' [-Wincompatible-pointer-types]
+    currunt=currunt->next;
+           ^
+..\src\C project_Abdullah Mohamed.c:121:16: warning: assignment to 'struct student *' from incompatible pointer type 'struct node *' [-Wincompatible-pointer-types]
+   currunt->next=link;  //putting the node at the end of the list
+                ^
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+22:12:48 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+..\src\C project_Abdullah Mohamed.c: In function 'main':
+..\src\C project_Abdullah Mohamed.c:33:29: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   struct student *const ptr=&n; //to point on the struct that we working on
+                             ^
+..\src\C project_Abdullah Mohamed.c: In function 'addStudent':
+..\src\C project_Abdullah Mohamed.c:119:11: warning: assignment to 'struct node *' from incompatible pointer type 'struct noed *' [-Wincompatible-pointer-types]
+    currunt=(struct noed*)currunt->next;
+           ^
+..\src\C project_Abdullah Mohamed.c:121:16: warning: assignment to 'struct student *' from incompatible pointer type 'struct node *' [-Wincompatible-pointer-types]
+   currunt->next=link;  //putting the node at the end of the list
+                ^
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+22:13:18 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+..\src\C project_Abdullah Mohamed.c: In function 'main':
+..\src\C project_Abdullah Mohamed.c:33:29: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   struct student *const ptr=&n; //to point on the struct that we working on
+                             ^
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+22:14:22 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+..\src\C project_Abdullah Mohamed.c: In function 'main':
+..\src\C project_Abdullah Mohamed.c:51:3: warning: writing into constant object (argument 2) [-Wformat=]
+   scanf("%c",(ptr->name));
+   ^~~~~
+..\src\C project_Abdullah Mohamed.c:51:3: warning: writing into constant object (argument 2) [-Wformat=]
+..\src\C project_Abdullah Mohamed.c:55:3: warning: writing into constant object (argument 2) [-Wformat=]
+   scanf("%d",&(ptr->age));
+   ^~~~~
+..\src\C project_Abdullah Mohamed.c:55:3: warning: writing into constant object (argument 2) [-Wformat=]
+..\src\C project_Abdullah Mohamed.c:59:3: warning: writing into constant object (argument 2) [-Wformat=]
+   scanf("%d",&(ptr->id));
+   ^~~~~
+..\src\C project_Abdullah Mohamed.c:59:3: warning: writing into constant object (argument 2) [-Wformat=]
+..\src\C project_Abdullah Mohamed.c:62:3: warning: writing into constant object (argument 2) [-Wformat=]
+   scanf("%f",&(ptr->gpa));
+   ^~~~~
+..\src\C project_Abdullah Mohamed.c:62:3: warning: writing into constant object (argument 2) [-Wformat=]
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+22:14:55 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+Info: Nothing to build for C project_Abdullah Mohamed
+22:15:53 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+Info: Nothing to build for C project_Abdullah Mohamed
+22:16:43 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+Info: Nothing to build for C project_Abdullah Mohamed
+22:23:01 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+..\src\C project_Abdullah Mohamed.c: In function 'displayStudents':
+..\src\C project_Abdullah Mohamed.c:139:11: warning: assignment to 'struct node *' from incompatible pointer type 'struct student *' [-Wincompatible-pointer-types]
+    currunt=currunt->next;
+           ^
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+22:23:20 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+Info: Nothing to build for C project_Abdullah Mohamed
+22:25:57 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+22:28:39 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file C project_Abdullah Mohamed.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+22:28:50 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+Info: Nothing to build for C project_Abdullah Mohamed
+Info: Nothing to build for C project_Abdullah Mohamed
+22:30:32 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file C project_Abdullah Mohamed.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+22:30:38 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+22:31:26 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+22:32:03 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file C project_Abdullah Mohamed.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+22:32:09 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+08:43:43 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+..\src\C project_Abdullah Mohamed.c: In function 'searchStudentByID':
+..\src\C project_Abdullah Mohamed.c:174:12: warning: assignment to 'struct node *' from incompatible pointer type 'struct student *' [-Wincompatible-pointer-types]
+     currunt=currunt->next;
+            ^
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+08:46:42 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+..\src\C project_Abdullah Mohamed.c: In function 'main':
+..\src\C project_Abdullah Mohamed.c:71:3: error: a label can only be part of a statement and a declaration is not a statement
+   int id=0;
+   ^~~
+..\src\C project_Abdullah Mohamed.c:75:11: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+   scanf("%d",id);
+          ~^  ~~
+..\src\C project_Abdullah Mohamed.c:75:11: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+08:47:18 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+..\src\C project_Abdullah Mohamed.c: In function 'main':
+..\src\C project_Abdullah Mohamed.c:71:3: error: a label can only be part of a statement and a declaration is not a statement
+   int id=0;
+   ^~~
+..\src\C project_Abdullah Mohamed.c:75:29: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+   searchStudentByID(scanf("%d",id););
+                            ~^  ~~
+..\src\C project_Abdullah Mohamed.c:75:29: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+..\src\C project_Abdullah Mohamed.c:75:35: error: expected ')' before ';' token
+   searchStudentByID(scanf("%d",id););
+                                   ^
+                                   )
+08:47:46 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+..\src\C project_Abdullah Mohamed.c: In function 'main':
+..\src\C project_Abdullah Mohamed.c:76:11: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+   scanf("%d",id);
+          ~^  ~~
+..\src\C project_Abdullah Mohamed.c:76:11: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+08:48:03 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+Info: Nothing to build for C project_Abdullah Mohamed
+Info: Nothing to build for C project_Abdullah Mohamed
+13:27:28 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+..\src\C project_Abdullah Mohamed.c: In function 'searchStudentByID':
+..\src\C project_Abdullah Mohamed.c:187:21: error: 'ptr' undeclared (first use in this function); did you mean 'putw'?
+        scanf("%d",&(ptr->age));
+                     ^~~
+                     putw
+..\src\C project_Abdullah Mohamed.c:187:21: note: each undeclared identifier is reported only once for each function it appears in
+13:28:41 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+..\src\C project_Abdullah Mohamed.c: In function 'searchStudentByID':
+..\src\C project_Abdullah Mohamed.c:201:26: warning: passing argument 1 of 'strcpy' makes pointer from integer without a cast [-Wint-conversion]
+      strcpy(currunt->data.age,age);
+             ~~~~~~~~~~~~~^~~~
+In file included from ..\src\C project_Abdullah Mohamed.c:13:
+C:/mingw64/x86_64-w64-mingw32/include/string.h:61:18: note: expected 'char * restrict' but argument is of type 'int'
+   char * __cdecl strcpy(char * __restrict__ _Dest,const char * __restrict__ _Source);
+                  ^~~~~~
+..\src\C project_Abdullah Mohamed.c:201:31: warning: passing argument 2 of 'strcpy' makes pointer from integer without a cast [-Wint-conversion]
+      strcpy(currunt->data.age,age);
+                               ^~~
+In file included from ..\src\C project_Abdullah Mohamed.c:13:
+C:/mingw64/x86_64-w64-mingw32/include/string.h:61:18: note: expected 'const char * restrict' but argument is of type 'int'
+   char * __cdecl strcpy(char * __restrict__ _Dest,const char * __restrict__ _Source);
+                  ^~~~~~
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+Info: Nothing to build for C project_Abdullah Mohamed
+13:29:22 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+13:30:52 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+..\src\C project_Abdullah Mohamed.c: In function 'main':
+..\src\C project_Abdullah Mohamed.c:85:3: error: too few arguments to function 'updateStudent'
+   updateStudent()
+   ^~~~~~~~~~~~~
+..\src\C project_Abdullah Mohamed.c:30:6: note: declared here
+ void updateStudent(int id); //this function update the student with this id
+      ^~~~~~~~~~~~~
+..\src\C project_Abdullah Mohamed.c:85:18: error: expected ';' before 'break'
+   updateStudent()
+                  ^
+                  ;
+    break;
+    ~~~~~          
+13:30:59 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+..\src\C project_Abdullah Mohamed.c: In function 'main':
+..\src\C project_Abdullah Mohamed.c:85:3: error: too few arguments to function 'updateStudent'
+   updateStudent()
+   ^~~~~~~~~~~~~
+..\src\C project_Abdullah Mohamed.c:30:6: note: declared here
+ void updateStudent(int id); //this function update the student with this id
+      ^~~~~~~~~~~~~
+..\src\C project_Abdullah Mohamed.c:85:18: error: expected ';' before 'break'
+   updateStudent()
+                  ^
+                  ;
+    break;
+    ~~~~~          
+13:31:17 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+Info: Nothing to build for C project_Abdullah Mohamed
+13:34:53 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file C project_Abdullah Mohamed.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+13:35:00 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+13:38:09 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file C project_Abdullah Mohamed.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+13:38:14 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+Info: Nothing to build for C project_Abdullah Mohamed
+13:43:02 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file C project_Abdullah Mohamed.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+13:43:08 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+13:45:46 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+13:47:42 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+..\src\C project_Abdullah Mohamed.c: In function 'updateStudent':
+..\src\C project_Abdullah Mohamed.c:248:4: error: 'retun' undeclared (first use in this function); did you mean 'getenv'?
+    retun;
+    ^~~~~
+    getenv
+..\src\C project_Abdullah Mohamed.c:248:4: note: each undeclared identifier is reported only once for each function it appears in
+13:47:49 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+13:51:36 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+Info: Nothing to build for C project_Abdullah Mohamed
+13:59:00 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+Info: Nothing to build for C project_Abdullah Mohamed
+14:02:31 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+14:22:19 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+..\src\C project_Abdullah Mohamed.c: In function 'calculateAverageGPA':
+..\src\C project_Abdullah Mohamed.c:266:10: warning: assignment to 'struct node *' from incompatible pointer type 'struct student *' [-Wincompatible-pointer-types]
+   currunt=currunt->next;
+          ^
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+14:22:37 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+14:42:04 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+..\src\C project_Abdullah Mohamed.c: In function 'searchHighestGPA':
+..\src\C project_Abdullah Mohamed.c:312:5: warning: implicit declaration of function 'strycpy'; did you mean 'strncpy'? [-Wimplicit-function-declaration]
+     strycpy(name,currunt->next->name);
+     ^~~~~~~
+     strncpy
+..\src\C project_Abdullah Mohamed.c:315:11: warning: assignment to 'struct node *' from incompatible pointer type 'struct student *' [-Wincompatible-pointer-types]
+    currunt=currunt->next;
+           ^
+..\src\C project_Abdullah Mohamed.c:323:22: error: 'gpa' undeclared (first use in this function)
+  printf("GPA:%.3f\n",gpa);
+                      ^~~
+..\src\C project_Abdullah Mohamed.c:323:22: note: each undeclared identifier is reported only once for each function it appears in
+14:43:02 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+..\src\C project_Abdullah Mohamed.c: In function 'searchHighestGPA':
+..\src\C project_Abdullah Mohamed.c:315:11: warning: assignment to 'struct node *' from incompatible pointer type 'struct student *' [-Wincompatible-pointer-types]
+    currunt=currunt->next;
+           ^
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+14:43:14 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+Info: Nothing to build for C project_Abdullah Mohamed
+16:23:25 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+16:25:56 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+Info: Nothing to build for C project_Abdullah Mohamed
+Info: Nothing to build for C project_Abdullah Mohamed
+16:34:37 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+Info: Nothing to build for C project_Abdullah Mohamed
+16:40:18 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+Info: Nothing to build for C project_Abdullah Mohamed
+16:47:21 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+17:00:02 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+Info: Nothing to build for C project_Abdullah Mohamed
+Info: Nothing to build for C project_Abdullah Mohamed
+17:29:27 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+..\src\C project_Abdullah Mohamed.c: In function 'deleteStudent':
+..\src\C project_Abdullah Mohamed.c:308:10: warning: assignment to 'struct node *' from incompatible pointer type 'struct student *' [-Wincompatible-pointer-types]
+  currunt = head->next;
+          ^
+..\src\C project_Abdullah Mohamed.c:312:8: warning: assignment to 'struct node *' from incompatible pointer type 'struct student *' [-Wincompatible-pointer-types]
+   head = head->next;
+        ^
+..\src\C project_Abdullah Mohamed.c:323:11: warning: assignment to 'struct node *' from incompatible pointer type 'struct student *' [-Wincompatible-pointer-types]
+   currunt = currunt->next;
+           ^
+..\src\C project_Abdullah Mohamed.c:324:8: warning: assignment to 'struct node *' from incompatible pointer type 'struct student *' [-Wincompatible-pointer-types]
+   prev = prev->next;
+        ^
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+Info: Nothing to build for C project_Abdullah Mohamed
+17:30:45 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+17:32:12 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+..\src\C project_Abdullah Mohamed.c: In function 'main':
+..\src\C project_Abdullah Mohamed.c:92:12: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+    scanf("%d",id);
+           ~^  ~~
+..\src\C project_Abdullah Mohamed.c:92:12: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+17:32:19 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+17:50:04 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+17:51:24 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+Info: Nothing to build for C project_Abdullah Mohamed
+Info: Nothing to build for C project_Abdullah Mohamed
+18:05:23 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+Info: Nothing to build for C project_Abdullah Mohamed
+Info: Nothing to build for C project_Abdullah Mohamed
+18:08:45 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+18:20:11 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+18:23:46 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+18:24:27 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+18:25:29 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file C project_Abdullah Mohamed.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:25:35 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+18:34:09 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+..\src\C project_Abdullah Mohamed.c: In function 'addStudent':
+..\src\C project_Abdullah Mohamed.c:127:14: warning: assignment to 'struct student *' from incompatible pointer type 'struct node *' [-Wincompatible-pointer-types]
+    link->next=head;
+              ^
+..\src\C project_Abdullah Mohamed.c:133:11: warning: assignment to 'struct node *' from incompatible pointer type 'struct student *' [-Wincompatible-pointer-types]
+    currunt=currunt->next;
+           ^
+..\src\C project_Abdullah Mohamed.c:135:16: warning: assignment to 'struct student *' from incompatible pointer type 'struct node *' [-Wincompatible-pointer-types]
+   currunt->next=link;
+                ^
+..\src\C project_Abdullah Mohamed.c:139:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+    if(currunt_2->data.id=ptr->id){
+       ^~~~~~~~~
+..\src\C project_Abdullah Mohamed.c:145:13: warning: assignment to 'struct node *' from incompatible pointer type 'struct student *' [-Wincompatible-pointer-types]
+    currunt_2=currunt_2->next;
+             ^
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+18:35:22 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+..\src\C project_Abdullah Mohamed.c: In function 'addStudent':
+..\src\C project_Abdullah Mohamed.c:145:13: warning: assignment to 'struct node *' from incompatible pointer type 'struct student *' [-Wincompatible-pointer-types]
+    currunt_2=currunt_2->next;
+             ^
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+18:35:38 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+Info: Nothing to build for C project_Abdullah Mohamed
+18:37:14 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+18:41:46 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file C project_Abdullah Mohamed.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:41:51 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+18:43:03 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+19:05:25 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+Info: Nothing to build for C project_Abdullah Mohamed
+19:06:40 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+Info: Nothing to build for C project_Abdullah Mohamed
+19:10:34 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+Info: Nothing to build for C project_Abdullah Mohamed
+19:19:58 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file C project_Abdullah Mohamed.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:20:03 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+Info: Nothing to build for C project_Abdullah Mohamed
+19:24:58 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file C project_Abdullah Mohamed.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:25:05 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+19:31:30 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+19:31:58 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+18:53:29 **** Rebuild of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+..\src\C project_Abdullah Mohamed.c: In function 'addStudent':
+..\src\C project_Abdullah Mohamed.c:110:2: warning: writing into constant object (argument 2) [-Wformat=]
+  scanf("%s", (ptr->name));
+  ^~~~~
+..\src\C project_Abdullah Mohamed.c:110:2: warning: writing into constant object (argument 2) [-Wformat=]
+..\src\C project_Abdullah Mohamed.c:113:2: warning: writing into constant object (argument 2) [-Wformat=]
+  scanf("%d", &(ptr->age));
+  ^~~~~
+..\src\C project_Abdullah Mohamed.c:113:2: warning: writing into constant object (argument 2) [-Wformat=]
+..\src\C project_Abdullah Mohamed.c:116:2: warning: writing into constant object (argument 2) [-Wformat=]
+  scanf("%d", &(ptr->id));
+  ^~~~~
+..\src\C project_Abdullah Mohamed.c:116:2: warning: writing into constant object (argument 2) [-Wformat=]
+..\src\C project_Abdullah Mohamed.c:119:2: warning: writing into constant object (argument 2) [-Wformat=]
+  scanf("%f", &(ptr->gpa));
+  ^~~~~
+..\src\C project_Abdullah Mohamed.c:119:2: warning: writing into constant object (argument 2) [-Wformat=]
+..\src\C project_Abdullah Mohamed.c: In function 'updateStudent':
+..\src\C project_Abdullah Mohamed.c:204:15: warning: unused variable 'currunt_2' [-Wunused-variable]
+  struct node *currunt_2 = NULL;
+               ^~~~~~~~~
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+18:55:09 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+..\src\C project_Abdullah Mohamed.c: In function 'updateStudent':
+..\src\C project_Abdullah Mohamed.c:204:15: warning: unused variable 'currunt_2' [-Wunused-variable]
+  struct node *currunt_2 = NULL;
+               ^~~~~~~~~
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+19:38:41 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+19:42:01 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+19:56:17 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+19:56:50 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+19:57:21 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+..\src\C project_Abdullah Mohamed.c: In function 'main':
+..\src\C project_Abdullah Mohamed.c:108:11: warning: unknown escape sequence: '\='
+    printf("\t\t=======================================\n\t\t\tThank you for using our system\n\=======================================");
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+19:58:03 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+19:58:15 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+Info: Nothing to build for C project_Abdullah Mohamed
+Info: Nothing to build for C project_Abdullah Mohamed
+20:11:27 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+20:20:57 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+20:21:30 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+20:21:46 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+Info: Nothing to build for C project_Abdullah Mohamed
+Info: Nothing to build for C project_Abdullah Mohamed
+20:26:07 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+Info: Nothing to build for C project_Abdullah Mohamed
+20:38:37 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+20:43:28 **** Incremental Build of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+Info: Nothing to build for C project_Abdullah Mohamed
+22:19:48 **** Rebuild of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 

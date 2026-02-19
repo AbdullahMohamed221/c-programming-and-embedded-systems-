@@ -1,0 +1,7 @@
+22:19:48 **** Rebuild of configuration Debug for project C project_Abdullah Mohamed ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C project_Abdullah Mohamed.o" "..\\src\\C project_Abdullah Mohamed.c" 
+gcc -o "C project_Abdullah Mohamed.exe" "src\\C project_Abdullah Mohamed.o" 
+
+22:19:49 Build Finished. 0 errors, 0 warnings. (took 1s.167ms)
+
