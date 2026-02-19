@@ -1,0 +1,36 @@
+00:51:11 **** Incremental Build of configuration Debug for project car_parking_sensor_project ****
+make all 
+Building file: ../application.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application.d" -MT"application.o" -c -o "application.o" "../application.c"
+In file included from ../application.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../application.c
+ 
+Building target: car_parking_sensor_project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,car_parking_sensor_project.map -mmcu=atmega32 -o "car_parking_sensor_project.elf"  ./LCD.o ./LED.o ./application.o ./buzzer.o ./gpio.o ./icu.o ./ultrasonic_sensor.o   
+Finished building target: car_parking_sensor_project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S car_parking_sensor_project.elf  >"car_parking_sensor_project.lss"
+Finished building: car_parking_sensor_project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 car_parking_sensor_project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13478 bytes (41.1% Full)
+(.text + .data + .bootloader)
+
+Data:        309 bytes (15.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+00:51:12 Build Finished. 0 errors, 1 warnings. (took 810ms)
+
